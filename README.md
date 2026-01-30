@@ -14,7 +14,7 @@
 - [x] [Ruff](https://github.com/charliermarsh/ruff) for linting
 - [x] [Docker](https://www.docker.com/) for containerization
 - [x] Github Actions for CI checks (lint, test, coverage)
-  
+  demo change
 ## Install
 ### Fetch the code
 Clone repo, remove git history:
