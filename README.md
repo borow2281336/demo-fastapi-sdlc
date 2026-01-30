@@ -1,7 +1,6 @@
 # Minyma Python+FastApi starter template
 > Kickstart your backend application with a pre-configured FastAPI + SQLAlchemy template
 
-
 ## What's included?
 - [x] [FastAPI](https://fastapi.tiangolo.com/) as web framework
 - [x] [SQLAlchemy](https://www.sqlalchemy.org/) as the ORM
@@ -14,7 +13,7 @@
 - [x] [Ruff](https://github.com/charliermarsh/ruff) for linting
 - [x] [Docker](https://www.docker.com/) for containerization
 - [x] Github Actions for CI checks (lint, test, coverage)
-  
+
 ## Install
 ### Fetch the code
 Clone repo, remove git history:
@@ -50,21 +49,20 @@ docker-compose up --build
 ### Using Poetry
 Poetry is an alternative python package manager. From experience, the default python package manager `pip` and the virtual environment tool `venv` are poorly designed and often cause package configuration issues. Enter poetry: a modern package manager with a more sane API.
 - create virtual environment: `poetry shell`
-- add dependency: `poetry add <pacakage>`
-- add dev dependency: `poetry add <pacakage> -G dev`
+- add dependency: `poetry add <package>`
+- add dev dependency: `poetry add <package> -G dev`
 
 ### Running migrations
 - the template is set up with alembic, an automatic migrations tool for SQLAlchemy. 
 - To automatically run migrations against the database run `poe db_pull`
-- To automatically genrate migrations against the database run `poe db_push <message>`
-
+- To automatically generate migrations against the database run `poe db_push <message>`
 
 ### Configuration and secrets
 There are three different environments preconfigured: `test`, `dev`, and `prod`. To switch environments set `APP_ENV` to one of the above environment names. Use `dev.env` (default, for `dev`), `test.env` and `.prod.env` for storing the values. Note the `.` before `prod.env`: adding a dot before any file will automatically git ignore it.
 
 ### Development scripts
 As a drop-in replacement for `npm run ...` you can use `poe`. This way you can change development scripts in one place and each collaborator can then use the updated script, without thinking about flags and options.
-Avaialble scripts are:
+Available scripts are:
 
 | Command                 | Description                                        |
 | ----------------------- | -------------------------------------------------- |
@@ -79,5 +77,5 @@ Avaialble scripts are:
 | `poe db_pull`           | Apply migrations                                   |
 
 ## TODO:
-
 - [ ] service layer tests
+- [ ] Add more comprehensive documentation for each component and feature.
