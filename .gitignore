@@ -1,0 +1,11 @@
+__pycache__
+# ignore dot files
+.*
+# unignore dot files
+!.dockerignore
+# sqlite db file
+*.db
+
+.vscode/
+.idea/
+*.log
